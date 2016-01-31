@@ -1,0 +1,73 @@
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.page-prefooter {
+    background: #48525e;
+    color: #a2abb7;
+}
+
+.page-prefooter {
+    padding: 20px 0 10px 0;
+    clear: both;
+}
+
+.page-footer {
+    background: #3b434c;
+    color: #a2abb7;
+}
+
+.page-footer {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.goods-page-image {
+    padding-top: 10px !important;
+}
+
+.breadcrumb, .breadcrumb li {
+    font-size: 1.5em;
+}
+.brands .owl-carousel {
+    margin-bottom: 20px !important;
+}
+
+
+ul.pagination {
+    margin-bottom: 20px;
+}
+
+div.ls-slide img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.previews .col-lg-3 {
+    min-height: 457px !important;
+}
+#preview{
+    position:absolute;
+    display:none;
+    color:#fff;
+}
+#preview img {
+    width: 500px;
+    height: 500px;
+    z-index: 1000;
+}
+
+.product-image img {
+    width: 370px !important;
+}
+.fb-comments, .fb-comments span, .fb-comments iframe { width: 100% !important; }
+
+.stButton {
+    z-index: 0 !important;
+}
+.input-group .form-control {
+    z-index: 0 !important;
+}

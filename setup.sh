@@ -7,9 +7,9 @@ php artisan vendor:publish
 php -r "copy('.env.example', '.env');"
 php artisan key:generate
 
-sudo chown ducdh:ducdh -R . &&
+sudo chown `whoami`:www-data -R . &&
 chmod 755 -R . &&
-chmod o+w -R storage  
+chmod g+w -R storage  
 
 sed -i 's/host_here/localhost/g' .env
 sed -i 's/db_here/shopui/g' .env

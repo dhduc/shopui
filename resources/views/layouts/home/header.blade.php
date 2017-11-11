@@ -2,21 +2,18 @@
 <div class="pre-header">
     <div class="container">
         <div class="row">
-            <!-- BEGIN TOP BAR LEFT PART -->
             <div class="col-md-6 col-sm-6 additional-shop-info">
                 <ul class="list-unstyled list-inline">
                     <li><i class="fa fa-phone"></i><span>{{ $config['telephone'] }}</span></li>
                     <li><i class="fa fa-envelope-o"></i><span>{{ $config['email'] }}</span></li>
                 </ul>
             </div>
-            <!-- END TOP BAR LEFT PART -->
-            <!-- BEGIN TOP BAR MENU -->
             <div class="col-md-6 col-sm-6 additional-nav">
                 <ul class="list-unstyled list-inline pull-right">
                     @if( Auth::guest() )
-                        <li><i class="fa fa-user"></i>Welcome Guest</li>
-                        <li><a href="{{ URL::to('auth/login') }}">Log In</a></li>
-                        <li><a href="{{ URL::to('auth/register') }}">Sign Up</a></li>
+                        <li><a href="{{ URL::to('/') }}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                        <li><a href="{{ URL::to('auth/login') }}"><i class="fa fa-fw fa-sign-in"></i>Log In</a></li>
+                        <li><a href="{{ URL::to('auth/register') }}"><i class="fa fa-fw fa-sign-out"></i>Sign Up</a></li>
                     @else
                         <li><i class="fa fa-user"></i>Welcome {{ Auth::user()->name }}</li>
                         <?php
@@ -34,7 +31,6 @@
                     @endif
                 </ul>
             </div>
-            <!-- END TOP BAR MENU -->
         </div>
     </div>
 </div>
@@ -42,13 +38,12 @@
 <!-- BEGIN HEADER -->
 <div class="header">
     <div class="container">
-        <a class="site-logo" href="{{ URL::TO('/') }}"><img src="{{ asset('/').$config['logo'] }}" alt="Metronic Shop UI"></a>
+        <a class="site-logo" href="{{ URL::TO('/') }}"><img src="{{ asset('/').$config['logo'] }}" alt="Shop"></a>
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
         <!-- BEGIN CART -->
         <div class="top-cart-block">
             <?php echo $cartItem; ?>
             <i class="fa fa-shopping-cart"></i>
-
         </div>
         <!--END CART -->
 

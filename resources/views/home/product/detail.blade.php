@@ -3,25 +3,9 @@
     <link href="{{ URL::to('/') }}/../theme/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
     <link href="{{ asset("/") }}css/jquery-ui.css" rel="stylesheet" type="text/css"><!-- for slider-range -->
     <link href="{{ URL::to('/') }}/../theme/assets/global/plugins/rateit/src/rateit.css" rel="stylesheet" type="text/css">
-    <style>
-
-    </style>
-
 @stop
 @include('layouts.home.alert')
 @section('content')
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
     <div class="row margin-bottom-40">
 
 
@@ -82,23 +66,12 @@
                             </form>
                             <?php } ?>
                         </div>
-
-                        <ul class="social-icons">
-                            <span class='st_facebook_large' displayText='Facebook'></span>
-                            <span class='st_googleplus_large' displayText='Google +'></span>
-                            <span class='st_twitter_large' displayText='Tweet'></span>
-                            <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                            <span class='st_pinterest_large' displayText='Pinterest'></span>
-                            <span class='st_email_large' displayText='Email'></span>
-                        </ul>
                     </div>
 
                     <div class="product-page-content">
                         <ul id="myTab" class="nav nav-tabs">
                             <li class="active"><a href="#Description" data-toggle="tab">Description</a></li>
                             <li><a href="#Information" data-toggle="tab">Information</a></li>
-                            <li><a href="#Review" data-toggle="tab">Review</a></li>
-
                         </ul>
                         <div id="myTabContent" class="tab-content">
                             <div class="tab-pane fade in active" id="Description">
@@ -110,11 +83,6 @@
                             <div class="tab-pane fade" id="Information">
                                 {{-- Product Information --}}
                                 <?php echo $product['information'] ?>
-                            </div>
-                            <div class="tab-pane fade" id="Review">
-                                {{-- Product Review --}}
-                                <?php echo $review ?>
-
                             </div>
 
                         </div>
@@ -150,8 +118,4 @@
             Layout.initUniform();
         });
     </script>
-
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "21986ac7-20ab-4bcb-a309-0b8b0a55e386", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 @stop

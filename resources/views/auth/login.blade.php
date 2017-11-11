@@ -49,20 +49,7 @@
                                 <button type="submit" class="btn btn-primary">Login</button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-10 padding-right-30">
-                                <hr>
-                                <div class="login-socio">
-                                    <p class="text-muted">or login using:</p>
-                                    <button type="submit" class="btn btn-default">Facebook Login</button>
-                                </div>
-                            </div>
-                        </div>
                     </form>
-                </div>
-                <div class="col-md-5">
-                    <a class="site-logo" href="{{ URL::TO('/') }}">
-                        <img src="{{ asset('/images/img/logo-shop-green.png') }}" alt="Metronic Shop UI"></a>
                 </div>
             </div>
         </div>

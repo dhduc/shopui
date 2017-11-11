@@ -59,9 +59,6 @@
                 <ul class="list-unstyled list-inline">
                     <li><i class="fa fa-phone"></i><span>{{ $config['telephone'] }}</span></li>
                     <li><i class="fa fa-envelope-o"></i><span>{{ $config['email'] }}</span></li>
-                    <li>
-                        <a href="{{ URL::to('/') }}">Home</a>
-                    </li>
                 </ul>
             </div>
             <!-- END TOP BAR LEFT PART -->
@@ -69,9 +66,9 @@
             <div class="col-md-6 col-sm-6 additional-nav">
                 <ul class="list-unstyled list-inline pull-right">
                     @if( Auth::guest() )
-                        <li><i class="fa fa-user"></i>Welcome Guest</li>
-                        <li><a href="{{ URL::to('auth/login') }}">Log In</a></li>
-                        <li><a href="{{ URL::to('auth/register') }}">Sign Up</a></li>
+                        <li><a href="{{ URL::to('/') }}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                        <li><a href="{{ URL::to('auth/login') }}"><i class="fa fa-fw fa-sign-in"></i>Log In</a></li>
+                        <li><a href="{{ URL::to('auth/register') }}"><i class="fa fa-fw fa-sign-out"></i>Sign Up</a></li>
                     @else
                         <li><i class="fa fa-user"></i>Welcome {{ Auth::user()->name }}</li>
                         <?php
